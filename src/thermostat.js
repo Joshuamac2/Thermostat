@@ -3,17 +3,51 @@
 class Thermostat {
   constructor() {
     this.temperature = 20;
+    this.MINIMUM_TEMPERATURE = 10;
+    this.powerSavingMode = true;
+    this.MAX_LIMIT_PSM_ON = 25;
+    this.MAX_LIMIT_PSM_OFF = 32;
+
   }
 
   currentTemperature() {
     return this.temperature;
   }
 
+  isMinimumTemperature() {
+    return this.temperature === this.MINIMUM_TEMPERATURE;
+  }
+
+  isMaximumTemperature() {
+    if (this.isPowerSavingModeOn() === false) {
+      return this.temperature === this.MAX_LIMIT_PSM_OFF;
+    }
+    return this.temperature === this.MAX_LIMIT_PSM_ON;
+  }
+
   up() {
-    this.temperature += 1
+    if (this.isMaximumTemperature()) {
+      return;
+    }
+    this.temperature += 1;
   }
 
   down() {
+    if (this.isMinimumTemperature()) {
+      return;
+    }
     this.temperature -= 1
+  }
+
+  isPowerSavingModeOn() {
+    return this.powerSavingMode === true;
+  }
+
+  switchPowerSavingModeOff() {
+    this.powerSavingMode = false;
+  }
+
+  switchPowerSavingModeOn() {
+    this.powerSavingMode = true;
   }
 };
