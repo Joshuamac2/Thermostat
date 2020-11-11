@@ -7,6 +7,8 @@ class Thermostat {
     this.powerSavingMode = true;
     this.MAX_LIMIT_PSM_ON = 25;
     this.MAX_LIMIT_PSM_OFF = 32;
+    this.DEAFULT_TEMPERATURE = 20;
+    this.temperature = this.DEAFULT_TEMPERATURE;
 
   }
 
@@ -49,5 +51,9 @@ class Thermostat {
 
   switchPowerSavingModeOn() {
     this.powerSavingMode = true;
+  }
+
+  resetTemperature() {
+    this.temperature = 20;
   }
 };

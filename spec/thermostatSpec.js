@@ -67,4 +67,12 @@ describe('Thermostat', function () {
       expect(thermostat.currentTemperature()).toEqual(32);
     });
   });
+
+  it('reset temperature to default', function() {
+    for (var i = 0; i < 6; i++) {
+      thermostat.up();
+    }
+    thermostat.resetTemperature();
+    expect(thermostat.currentTemperature()).toEqual(20);
+  });
 });
