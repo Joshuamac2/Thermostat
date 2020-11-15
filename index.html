@@ -5,18 +5,20 @@
     <script src="jquery-3.5.1.js"></script>
     <script src="src/thermostat.js"></script>
     <script src="interface.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-    <h1> Thermostat </h1>
+      <h1> <p class="round2"> Thermostat</p> </h1>
       <h1 id="temperature"></h1>
-      Temperature controler
+    <form>
       <button id="temperature-up">+</button>
       <button id="temperature-down">-</button>
       <button id="temperature-reset">reset</button>
+      <p> Power saving mode is currently <span style="color:green;" id="power-saving-status">ON</span></p>
       <p>
-      Power saving mode is currently <span style="color:blue;" id="power-saving-status">on</span>
-      <button id="powersaving-on">PSM on</button>
-      <button id="powersaving-off">PSM off</button>
+      <button style="color:green;" id="powersaving-on">psm ON</button>
+      <button style="color:red;" id="powersaving-off">psm OFF</button>
       </p>
+    </form>
   </body>
 </html>

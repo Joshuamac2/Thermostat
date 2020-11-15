@@ -1,0 +1,24 @@
+body {
+  background-image: url("./images/temp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 30%;
+  color: black;
+}
+
+p.round2 {
+  border: 2px solid blue;
+  border-radius: 8px;
+}
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: black;
+}
+
+.high-usage {
+  color: red;
+}
