@@ -5,7 +5,7 @@ A simple thermostat where users can interact to change temperatures and add desi
 ![Alt text](images/thermostat.png)
 
 
-####Setup
+#### Setup
 
 From command line:
 ```
@@ -15,7 +15,7 @@ bundle
 open index.html
 ```
 
-####Customer's requirements:
+#### Customer's requirements:
 
 ```
 as user
@@ -47,7 +47,7 @@ so i know the temperature outside
 I would like the temperature of London    
 ```
 
-####Tech
+#### Tech
 - Javascript
 - Jquery
 - Jasmine
