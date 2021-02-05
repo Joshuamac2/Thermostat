@@ -1,14 +1,54 @@
 # Thermostat
 
-Customer's requirements:
+A simple thermostat where users can interact to change temperatures and add desired weather APIs.
 
-(1) Thermostat starts at 20 degrees
-(2) You can increase the temp with an up function
-(3) You can decrease the temp with a down function
-(4) The minimum temperature is 10 degrees
-(5) If power saving mode is on, the maximum temperature is 25 degrees
-(6) If power saving mode is off, the maximum temperature is 32 degrees
-(7) Power saving mode is on by default
-(8) You can reset the temperature to 20 with a reset function
-(9) You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
-(10) Add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.
+![Alt text](images/thermostat.png)
+
+
+####Setup
+
+From command line:
+```
+git clone git@github.com:Joshuamac2/Thermostat.git
+cd Thermostat
+bundle
+open index.html
+```
+
+####Customer's requirements:
+
+```
+as user
+so my temperature is controlled
+I want to increase or decrease my temperature
+
+as user
+so i can have my ideal temperature
+I want to a base temperature of 20
+
+as user
+so my temperature is never below or above desired temperature
+I would like my Thermostat to not go below 10 or above 32 degrees
+
+as user
+so i can save on my bills
+I would like a power saving mode on by default
+
+as user
+so i can reset temperature to base
+I would like a reset button
+
+as user
+so i so i can see its current energy usage
+I would like indication of usage with colours
+
+as user
+so i know the temperature outside
+I would like the temperature of London    
+```
+
+####Tech
+- Javascript
+- Jquery
+- Jasmine
+- HTML/CSS
