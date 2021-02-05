@@ -10,7 +10,6 @@ class Thermostat {
     this.powerSavingMode = true;
     this.MEDIUM_ENERGY_USAGE_LIMIT = 18;
     this.HIGH_ENERGY_USAGE_LIMIT = 25;
-
   }
 
   currentTemperature() {

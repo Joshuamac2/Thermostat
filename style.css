@@ -7,10 +7,10 @@ body {
   color: black;
 }
 
-p.round2 {
+/* p.round2 {
   border: 2px solid blue;
   border-radius: 8px;
-}
+} */
 .low-usage {
   color: green;
 }
